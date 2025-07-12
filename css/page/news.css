@@ -135,7 +135,7 @@ section {
 }
 .dailyNews_container_middle_mainNew_image {
   height: 65%;
-  background-image: url(images/news_image/main_new.jpg);
+  background-image: url(/images/news_image/main_new.jpg);
   background-size: cover;
   background-position: 100px;
   width: 100%;
