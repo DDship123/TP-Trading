@@ -1,0 +1,30 @@
+@keyframes moveUp {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -100%;
+  }
+}
+@keyframes moveDown {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 0;
+  }
+}
+.banner_moveUp {
+  animation-name: moveUp;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.banner_moveDown {
+  animation-name: moveDown;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

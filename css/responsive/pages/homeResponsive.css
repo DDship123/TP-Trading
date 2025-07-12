@@ -1,0 +1,129 @@
+@media screen and (max-width: 1450px) {
+  .footer iframe {
+    height: 267px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .banners_container {
+    width: 80vw;
+  }
+  .tradingBrokers_container {
+    width: 90vw;
+  }
+  .banners_container_image_list img {
+    width: 80vw;
+  }
+  .tradingBrokers_container_list {
+    height: 60%;
+  }
+  .tradingBrokers_dots {
+    margin-top: 0;
+  }
+  .introduction_title {
+    font-size: 64px;
+  }
+  .TP_biography_information_title {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .footer iframe {
+    height: 292px;
+  }
+  .tradingBrokers {
+    height: 600px;
+  }
+  .tradingBrokers_container_list {
+    height: 50%;
+  }
+  .tradingBrokers_container {
+    margin-top: 4%;
+  }
+  .tradingBrokers_title {
+    font-size: 54px;
+  }
+  .introduction_title {
+    font-size: 54px;
+  }
+  .TP_biography_title {
+    font-size: 54px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .banners_container {
+    width: 96vw;
+  }
+  .banners_container_image_list img {
+    width: 96vw;
+  }
+  .introduction p {
+    font-size: 28px;
+  }
+  .tradingBrokers_container i {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer iframe {
+    height: 370px;
+  }
+  .tradingBrokers_title {
+    font-size: 48px;
+  }
+  .introduction_title {
+    font-size: 48px;
+  }
+  .introduction p {
+    font-size: 22px;
+  }
+  .TP_biography_title {
+    font-size: 50px;
+  }
+  .TP_biography_youtube_channel_information h1 {
+    font-size: 28px;
+  }
+  .TP_biography_youtube_channel_information p {
+    font-size: 18px;
+  }
+  .TP_biography_youtube_channel {
+    gap: 1.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .tradingBrokers_container_list_group {
+    flex-direction: column;
+  }
+  .tradingBrokers_container_list {
+    height: 100%;
+  }
+  .tradingBrokers_container_list_group_image {
+    width: 60%;
+    margin: 0 auto;
+    height: 30%;
+  }
+  .tradingBrokers_dots {
+    margin-top: 40px;
+  }
+  .tradingBrokers_dots {
+    width: 20vw;
+  }
+  .introduction p {
+    font-size: 18px;
+  }
+  .introduction {
+    height: auto;
+  }
+  .tradingBrokers_title,
+  .introduction_title,
+  .TP_biography_title {
+    font-size: 36px;
+  }
+  .footer iframe {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .footer iframe {
+    height: 500px;
+  }
+}

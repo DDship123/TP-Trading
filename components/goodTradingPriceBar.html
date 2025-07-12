@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" style="scrollbar-width: none">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/components/goodTradingPriceBar.css" />
+    <link
+      rel="stylesheet"
+      href="/css/animation/goodTradingPriceBarAnimation.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="priceBar">
+      <div class="priceBar_list">
+        <!-- Khối 1: Giá thị trường mới nhất -->
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/gold.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>GOLD</h2>
+            <p>(XAUUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$3,356.25</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.96%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/oil.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>OIL</h2>
+            <p>(WTI)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$68.45</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.66%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/bitcoin 1.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>Bitcoin</h2>
+            <p>(BTC)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$117,600</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>1.23%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/ethereum 1.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>Ethereum</h2>
+            <p>(ETH)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$2,986</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>1.05%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/xrp 1.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>XRP</h2>
+            <p>(XRPUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$2.75</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>9.2%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/GBPUSD.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>GBPUSD</h2>
+            <p>(GBPUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$1.37205</h3>
+            <p><i class="fa-solid fa-sort-down"></i>0.12%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/USDJPY.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>USDJPY</h2>
+            <p>(USDJPY)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>¥147.40</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.70%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/GBPJPY.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>GBPJPY</h2>
+            <p>(GBPJPY)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>¥197.559</h3>
+            <p><i class="fa-solid fa-sort-down"></i>0.85%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/EURUSD.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>EURUSD</h2>
+            <p>(EURUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$1.17627</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.34%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="priceBar_list">
+        <!-- Khối 1: Giá thị trường mới nhất -->
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/gold.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>GOLD</h2>
+            <p>(XAUUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$3,356.25</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.96%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/oil.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>OIL</h2>
+            <p>(WTI)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$68.45</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.66%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/bitcoin 1.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>Bitcoin</h2>
+            <p>(BTC)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$117,600</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>1.23%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/ethereum 1.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>Ethereum</h2>
+            <p>(ETH)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$2,986</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>1.05%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/xrp 1.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>XRP</h2>
+            <p>(XRPUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$2.75</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>9.2%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/GBPUSD.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>GBPUSD</h2>
+            <p>(GBPUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$1.37205</h3>
+            <p><i class="fa-solid fa-sort-down"></i>0.12%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/USDJPY.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>USDJPY</h2>
+            <p>(USDJPY)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>¥147.40</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.70%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/GBPJPY.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>GBPJPY</h2>
+            <p>(GBPJPY)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>¥197.559</h3>
+            <p><i class="fa-solid fa-sort-down"></i>0.85%</p>
+          </div>
+        </div>
+
+        <div class="priceBar_list_item">
+          <img
+            src="/images/Trading_item_icons/EURUSD.png"
+            alt="trading_item_icon"
+          />
+          <div class="priceBar_list_item_name">
+            <h2>EURUSD</h2>
+            <p>(EURUSD)</p>
+          </div>
+          <div class="priceBar_list_item_price">
+            <h3>$1.17627</h3>
+            <p><i class="fa-solid fa-sort-up icon_up"></i>0.34%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/js/components/goodTradingPriceBar.js"></script>
+</html>

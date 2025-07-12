@@ -1,0 +1,17 @@
+@keyframes sideToLeft {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: calc(-2653px); /* hoặc calc(-2653px) nếu bạn muốn dùng px */
+  }
+}
+
+.price_list_animation {
+  animation: sideToLeft;
+  animation-duration: 30s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}

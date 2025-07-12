@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.priceBar {
+  height: 100px;
+  background-color: #1f1f1f;
+  padding: 0 10px;
+  position: relative;
+  overflow-x: hidden;
+}
+.priceBar_list {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100vw;
+}
+.priceBar_list_item {
+  display: flex;
+  align-items: center;
+  margin-right: 55px;
+  color: white;
+}
+.priceBar_list_item_name {
+  margin-left: 15px;
+  margin-right: 25px;
+}
+.priceBar_list_item_price p {
+  display: flex;
+  font-size: 20px;
+}
+.priceBar_list_item_price p i {
+  margin-right: 10px;
+  color: red;
+}
+.icon_up {
+  color: #51ff00 !important;
+  transform: rotate(360deg) translateY(30%);
+}

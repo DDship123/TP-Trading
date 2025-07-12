@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+.footerBar {
+  padding: 30px 10%;
+  background-color: #001e1e;
+  color: white;
+}
+.footerBar_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.copyRight {
+  font-size: 20px;
+}
+.footerBar_policy {
+  margin-top: 30px;
+  text-align: center;
+}
+.footerBar_policy h1 {
+  margin-bottom: 10px;
+}
+.footerBar_policy p {
+  font-size: 20px;
+}

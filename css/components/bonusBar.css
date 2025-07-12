@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.bonusBar {
+  width: 100vw;
+  height: 55px;
+  background-color: #1f1f1f;
+  position: relative;
+  overflow: hidden;
+}
+.bonusBar_item {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100vw;
+  width: 1730px;
+}
+h2 {
+  color: #ff0000;
+}

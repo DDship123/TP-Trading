@@ -1,0 +1,201 @@
+@media screen and (max-width: 1450px) {
+  .footer iframe {
+    height: 267px;
+  }
+  .generalKnowledge_title h1 {
+    width: 45%;
+  }
+  .dailyNews_container {
+    flex-direction: column;
+  }
+  .dailyNews_container {
+    height: auto;
+  }
+  .dailyNews_container_left {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 450px 450px 450px;
+    gap: 1%;
+    overflow: unset;
+    overflow-x: scroll;
+    height: 500px;
+    padding: 10px;
+  }
+  .dailyNews_container_left img {
+    height: 60%;
+  }
+  .dailyNews_container_left_smallNew {
+    border: none;
+    height: 100%;
+    padding-bottom: 0;
+  }
+  .dailyNews_container_middle {
+    height: 1200px;
+    width: 100%;
+    margin: 40px 0;
+  }
+  .dailyNews_container_middle_mainNew_image {
+    height: 70%;
+    background-repeat: no-repeat;
+    background-position: unset;
+  }
+  .dailyNews_container_middle_sideNews {
+    margin-top: 20px;
+  }
+  .dailyNews_container_right {
+    margin: 0 auto;
+    width: auto;
+  }
+  .dailyNews_container_right_banners {
+    position: unset;
+    display: flex;
+    gap: 2%;
+  }
+  .dailyNews_container_middle_mainNew h3 {
+    padding-bottom: 20px;
+  }
+  .analyse_entrys_container_entry {
+    flex-direction: column;
+    height: auto;
+  }
+  .analyse_entrys_container_entry > img {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .analyse_entrys_container_entry_currency {
+    width: 100%;
+  }
+  .analyse_entrys_container_entry_currency_name,
+  .analyse_entrys_container_entry_currency_price {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .analyse_entrys_container_entry_currency_name img {
+    width: 8%;
+  }
+  .analyse_entrys_container_entry_currency_price img {
+    width: 6%;
+  }
+  .analyse_entrys_container_entry_currency_date {
+    text-align: center;
+  }
+  .analyse_entrys_container_entry_setUp {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .set_up {
+    justify-content: center;
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .generalKnowledge_title h1 {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 970px) {
+  .footer iframe {
+    height: 292px;
+  }
+  .dailyNews_container_middle_mainNew h3 {
+    font-size: 28px;
+  }
+  .dailyNews_container_middle_mainNew p {
+    font-size: 22px;
+  }
+  .dailyNews_container_middle_sideNews_new_content h2 {
+    font-size: 28px;
+    text-underline-offset: unset;
+  }
+  .dailyNews_container_middle_mainNew h3 {
+    text-underline-offset: unset;
+  }
+}
+@media screen and (max-width: 750px) {
+  .footer iframe {
+    height: 370px;
+  }
+  .dailyNews_container_middle_mainNew h3 {
+    font-size: 24px;
+  }
+  .dailyNews_container_middle_sideNews_new_content h2 {
+    font-size: 24px;
+  }
+  .analyse_entrys_categorize_options h1 {
+    font-size: 24px;
+  }
+  .analyse_entrys_categorize > i {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .analyse_entrys_title {
+    font-size: 48px;
+  }
+  .analyse_entrys_categorize > i {
+    display: none;
+  }
+  .analyse_entrys_categorize_options h1 {
+    font-size: 20px;
+  }
+  .footer iframe {
+    height: 400px;
+  }
+  .dailyNews_container_middle_sideNews_new_content h2 {
+    font-size: 20px;
+  }
+  .dailyNews_container_middle_sideNews_new_content p {
+    font-size: 16px;
+  }
+  .dailyNews_container_middle_sideNews {
+    height: auto;
+  }
+  .dailyNews_container_right_banners {
+    position: relative;
+    display: unset;
+  }
+  .dailyNews_container_right {
+    height: 1128px;
+  }
+  .generalKnowledge_title h1 {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .generalKnowledge_container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .analyse_entrys_categorize_options h1 {
+    padding: 10px 15px;
+  }
+  .analyse_news_container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .analyse_entrys_container_entry_currency_date {
+    font-size: 18px;
+  }
+  .set_up p {
+    font-size: 24px;
+  }
+  .footer iframe {
+    height: 470px;
+  }
+  .analyse_entrys .scroll_bar::-webkit-scrollbar {
+    width: 10px;
+  }
+  .dailyNews_container_middle_mainNew h3 {
+    font-size: 18px;
+  }
+  .dailyNews_container_middle_mainNew p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer iframe {
+    height: 500px;
+  }
+}

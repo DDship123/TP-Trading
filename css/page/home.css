@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1f1f1f;
+  position: relative;
+}
+.header {
+  height: 260px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.priceBar {
+  overflow: hidden;
+}
+.menu {
+  transform: translateY(-8%);
+  border: none;
+  position: absolute;
+  overflow: visible;
+  z-index: 1000;
+  top: 100px;
+}
+.bonusBar {
+  transform: translateY(-31%);
+  border-top: 2px solid #57565f;
+  border-bottom: 2px solid #57565f;
+}
+.banners {
+  height: 90px;
+}
+.banners_container {
+  height: 100%;
+  width: 50%;
+  margin: 15px auto;
+  overflow: hidden;
+  position: relative;
+}
+.banners_container_image_list {
+  height: 100%;
+  position: absolute;
+  display: flex;
+}
+.banners_container_image_list img {
+  width: 50vw;
+  height: 100%;
+  cursor: pointer;
+}
+.tradingBrokers {
+  width: 95vw;
+  margin: 0 auto;
+  margin-top: 30px;
+  border: 2px solid #707d78;
+  border-radius: 20px;
+  height: 800px;
+  background-image: url(/images/background/BG_12.jpg);
+  background-size: cover;
+  background-position-y: 70%;
+  padding: 2%;
+  font-family: "Playfair Display", serif;
+}
+.tradingBrokers_title {
+  text-align: center;
+  font-size: 74px;
+  color: #f5ff00;
+  font-weight: 600;
+  text-shadow: 60px 25px 5px rgba(0, 0, 0, 0.2);
+}
+.tradingBrokers_container {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6%;
+  height: 50%;
+}
+.tradingBrokers_container i {
+  font-size: 74px;
+  color: #078133;
+  cursor: pointer;
+}
+.tradingBrokers_container_list {
+  width: 85%;
+  height: 100%;
+  overflow: hidden;
+}
+.tradingBrokers_container_list_group {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.tradingBrokers_container_list_group_image {
+  width: 31%;
+  background-color: white;
+  padding: 2%;
+  border-radius: 20px;
+  height: 100%;
+}
+.tradingBrokers_container_list_group_image img {
+  width: 96%;
+  height: 96%;
+  cursor: pointer;
+}
+.tradingBrokers_container_list_group:last-child {
+  margin-left: 40px;
+}
+.overFlow_hidden {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 100% 100%;
+  grid-template-rows: 100%;
+  position: relative;
+  transition: all 1s;
+}
+.tradingBrokers_container_list_group:last-child
+  .tradingBrokers_container_list_group_image:last-child {
+  background-color: black;
+}
+.tradingBrokers_dots {
+  display: flex;
+  width: 10%;
+  margin: 10px auto;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+.tradingBrokers_dots_dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #426c4b;
+}
+.dot_active {
+  background-color: white;
+}
+
+.introduction {
+  height: 775px;
+  width: 95vw;
+  margin: 50px auto;
+  border: 2px solid #707d78;
+  border-radius: 20px;
+  padding: 3% 4%;
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.introduction .image {
+  background-image: url(/images/background/BG_4.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: -1000;
+}
+.introduction_title {
+  text-align: center;
+  font-size: 74px;
+  color: #f5ff00;
+  font-weight: 600;
+  text-shadow: 60px 25px 5px rgba(0, 0, 0, 0.2);
+}
+.introduction p {
+  font-size: 32px;
+  color: white;
+  line-height: 50px;
+  margin-top: 3%;
+}
+
+.TP_biography {
+  width: 95vw;
+  margin: 50px auto;
+  border: 2px solid #707d78;
+  border-radius: 20px;
+  padding: 2.5%;
+  position: relative;
+  font-family: "Playfair Display", serif;
+}
+.TP_biography .image {
+  background-image: url(/images/background/BG_9.jpg);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 20px;
+  left: 0;
+  z-index: -1000;
+  opacity: 0.7;
+}
+.TP_biography_title {
+  text-align: center;
+  font-size: 74px;
+  color: #f5ff00;
+  font-weight: 600;
+  text-shadow: 60px 25px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 50px;
+}
+.TP_biography_youtube_channel {
+  display: flex;
+  align-items: center;
+  gap: 1%;
+  color: white;
+  height: 10%;
+}
+.TP_biography_youtube_channel_logo {
+  background-color: #00213b;
+  border-radius: 50%;
+}
+.TP_biography_youtube_channel_information h1 {
+  margin-bottom: 8%;
+  font-size: 36px;
+}
+.TP_biography_youtube_channel_information p {
+  font-size: 20px;
+}
+.TP_biography_youtube_video_title {
+  color: white;
+  font-size: 32px;
+  margin-top: 40px;
+}
+.TP_biography_youtube_video video {
+  width: 100%;
+  margin: 20px 0;
+}
+.TP_biography_information {
+  margin-top: 60px;
+  color: white;
+  position: relative;
+  border: 15px solid #1e1f25;
+  padding: 2%;
+  background-color: black;
+  border-radius: 10px;
+}
+.TP_biography_information_title {
+  position: absolute;
+  top: -60px;
+  left: -15px;
+  background-color: #1e1f25;
+  height: 60px;
+  width: 20%;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 28px;
+  border-radius: 10px;
+}
+.TP_biography_information_context p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.TP_biography_information_context p:nth-child(5) {
+  margin-bottom: 5px;
+}
+.TP_biography_information_context ul li {
+  margin-left: 1.5%;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.footer iframe {
+  border: none;
+  height: 240px;
+}
