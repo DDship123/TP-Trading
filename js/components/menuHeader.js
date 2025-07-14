@@ -27,7 +27,10 @@ window.addEventListener("load", () => {
   let menuBtn = menuIframe.querySelector(".menu > i");
   let menuBar = document.querySelector(".header .menu");
   menuBtn.addEventListener("click", () => {
-    if (window.location.href == "http://127.0.0.1:5500/page/home.html") {
+    if (
+      window.location.href.includes("index.html") ||
+      window.location.href == "https://www.tptrading.net"
+    ) {
       if (menuBar.getAttribute("height") == "100px") {
         menuBar.setAttribute("height", "600px");
         menuBar.style.top = "140px";
@@ -39,13 +42,22 @@ window.addEventListener("load", () => {
           menuBar.style.top = "100px";
         }, 800);
       }
-    } else {
+    } else if (window.location.href.includes("tradingBrokers.html")) {
+      if (menuBar.getAttribute("height") == "100px") {
+        menuBar.setAttribute("height", "600px");
+      }
+    } else if (window.location.href.includes("blog.html")) {
       if (menuBar.getAttribute("height") == "120px") {
         menuBar.setAttribute("height", "600px");
-      } else {
-        setTimeout(() => {
-          menuBar.setAttribute("height", "120px");
-        }, 800);
+      }
+    } else if (window.location.href.includes("news.html")) {
+      if (menuBar.getAttribute("height") == "100px") {
+        menuBar.setAttribute("height", "600px");
+      }
+    } else if (window.location.href.includes("contact.html")) {
+      console.log(1);
+      if (menuBar.getAttribute("height") == "120px") {
+        menuBar.setAttribute("height", "600px");
       }
     }
   });
