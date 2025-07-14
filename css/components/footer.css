@@ -27,3 +27,13 @@
 .footerBar_policy p {
   font-size: 20px;
 }
+.contacts {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+}
+.contacts a i {
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+}
