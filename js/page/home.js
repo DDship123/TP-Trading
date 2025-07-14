@@ -78,3 +78,15 @@ bannerImages[1].addEventListener("click", () => {
   window.location.href =
     "https://www.vtg-mkt-apac.com/vi/open-live-account/?affid=NzI2MzgxNw==";
 });
+
+let youtubeLogo = document.querySelector(".TP_biography_youtube_channel_logo");
+youtubeLogo.addEventListener("click", () => {
+  window.location.href = "https://www.youtube.com/@TPTrading2024";
+});
+
+let youtubeTitle = document.querySelector(
+  ".TP_biography_youtube_channel_information h1"
+);
+youtubeTitle.addEventListener("click", () => {
+  window.location.href = "https://www.youtube.com/@TPTrading2024";
+});

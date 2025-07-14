@@ -209,14 +209,17 @@ body {
   align-items: center;
   gap: 1%;
   color: white;
+  justify-content: center;
   height: 10%;
 }
 .TP_biography_youtube_channel_logo {
   background-color: #00213b;
   border-radius: 50%;
+  cursor: pointer;
 }
 .TP_biography_youtube_channel_information h1 {
   margin-bottom: 8%;
+  cursor: pointer;
   font-size: 36px;
 }
 .TP_biography_youtube_channel_information p {
@@ -226,10 +229,12 @@ body {
   color: white;
   font-size: 32px;
   margin-top: 40px;
+  text-align: center;
 }
 .TP_biography_youtube_video video {
-  width: 100%;
-  margin: 20px 0;
+  width: 80%;
+  margin: 20px 10%;
+  height: 600px;
 }
 .TP_biography_information {
   margin-top: 60px;

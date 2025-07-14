@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
   let menuIframe = document.querySelector(".header .menu").contentDocument;
   let pageBtns = menuIframe.querySelectorAll(".menu_tags a");
   switch (window.location.href) {
-    case "http://127.0.0.1:5500/page/home.html":
+    case "http://127.0.0.1:5500/index.html":
       pageBtns[0].style.textDecoration = "underline";
       pageBtns[0].style.textUnderlineOffset = "5px";
       break;
