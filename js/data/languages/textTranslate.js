@@ -4,6 +4,9 @@ window.addEventListener("load", async () => {
     case "/index.html":
       languageContext = await import("./page/homeText.js");
       break;
+    case "":
+      languageContext = await import("./page/homeText.js");
+      break;
     case "/page/tradingBrokers.html":
       languageContext = await import("./page/tradingBrokersText.js");
       break;
