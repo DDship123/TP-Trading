@@ -4,9 +4,6 @@ window.addEventListener("load", async () => {
     case "/index.html":
       languageContext = await import("./page/homeText.js");
       break;
-    case "":
-      languageContext = await import("./page/homeText.js");
-      break;
     case "/page/tradingBrokers.html":
       languageContext = await import("./page/tradingBrokersText.js");
       break;
@@ -18,6 +15,9 @@ window.addEventListener("load", async () => {
       break;
     case "/page/contact.html":
       languageContext = await import("./page/contactText.js");
+      break;
+    default:
+      languageContext = await import("./page/homeText.js");
       break;
   }
   let menuIframe = document.querySelector(".header .menu").contentDocument;
