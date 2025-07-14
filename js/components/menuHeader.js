@@ -27,10 +27,7 @@ window.addEventListener("load", () => {
   let menuBtn = menuIframe.querySelector(".menu > i");
   let menuBar = document.querySelector(".header .menu");
   menuBtn.addEventListener("click", () => {
-    if (
-      window.location.href.includes("index.html") ||
-      window.location.href == "https://www.tptrading.net"
-    ) {
+    if (window.location.href.includes("index.html")) {
       if (menuBar.getAttribute("height") == "100px") {
         menuBar.setAttribute("height", "600px");
         menuBar.style.top = "140px";
@@ -58,6 +55,18 @@ window.addEventListener("load", () => {
       console.log(1);
       if (menuBar.getAttribute("height") == "120px") {
         menuBar.setAttribute("height", "600px");
+      }
+    } else {
+      if (menuBar.getAttribute("height") == "100px") {
+        menuBar.setAttribute("height", "600px");
+        menuBar.style.top = "140px";
+      } else {
+        setTimeout(() => {
+          menuBar.setAttribute("height", "100px");
+        }, 800);
+        setTimeout(() => {
+          menuBar.style.top = "100px";
+        }, 800);
       }
     }
   });
