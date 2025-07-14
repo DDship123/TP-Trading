@@ -28,7 +28,7 @@ export const vietnamese = [
   "@TPTrading2024 • 2,84 nghìn người đăng ký • 45 video",
   "Giao Dịch Cho Người Mới Bắt Đầu: Hướng Dẫn Từng Bước Để Bắt Đầu",
   "Tiểu Sử",
-  "Trương Phạm, được cộng đồng biết đến rộng rãi với cái tên “TP Trading”, là minh chứng sống cho sự kiên trì và bền bỉ trong thế giới tài chính đầy thách thức.",
+  "Trường Phạm, được cộng đồng biết đến rộng rãi với cái tên “TP Trading”, là minh chứng sống cho sự kiên trì và bền bỉ trong thế giới tài chính đầy thách thức.",
   "Năm 2020, Trương lần đầu tiên bước vào thị trường giao dịch với một khoản vốn vay nhỏ. Tuy nhiên, do thiếu kinh nghiệm, cộng với lòng tham và những kỳ vọng phi thực tế, anh nhanh chóng đối mặt với nguy cơ phá sản, mất trắng chỉ sau vài tháng thất bại trên thị trường Forex.",
   "Nhưng thất bại đó đã trở thành một bước ngoặt lớn. Trương không bỏ cuộc. Trong hai năm tiếp theo, anh quyết tâm học hỏi nghiêm túc — đọc hàng trăm cuốn sách, thực hành trên tài khoản demo và rèn luyện kỹ năng quản lý rủi ro với kỷ luật nghiêm ngặt.",
   "Đến năm 2022, Trương trở lại thị trường với một chiến lược rõ ràng, kỷ luật vững chắc và tâm lý giao dịch mạnh mẽ. Chỉ trong vòng hai năm, anh đã biến tài khoản 10.000 đô la thành lợi nhuận hơn 150.000 đô la, nhờ những giao dịch chính xác trên các cặp tiền tệ và chỉ số hàng hóa.",
