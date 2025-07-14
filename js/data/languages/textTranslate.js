@@ -1,7 +1,7 @@
 window.addEventListener("load", async () => {
   let languageContext;
   switch (window.location.pathname) {
-    case "/page/home.html":
+    case "/index.html":
       languageContext = await import("./page/homeText.js");
       break;
     case "/page/tradingBrokers.html":
@@ -47,7 +47,6 @@ window.addEventListener("load", async () => {
         element.innerHTML = languageContext.english[index];
         index++;
       }
-      // console.log(element.innerHTML);
     }
 
     for (let child of element.children) {
