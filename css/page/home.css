@@ -17,7 +17,7 @@ body {
   overflow: hidden;
 }
 .menu {
-  transform: translateY(-8%);
+  transform: translateY(10px);
   border: none;
   position: absolute;
   overflow: visible;
@@ -25,7 +25,7 @@ body {
   top: 100px;
 }
 .bonusBar {
-  transform: translateY(-31%);
+  transform: translateY(0);
   border-top: 2px solid #57565f;
   border-bottom: 2px solid #57565f;
 }

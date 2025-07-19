@@ -17,8 +17,10 @@
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     transition: all 0.8s linear;
     z-index: 10000;
+    /* display: none; */
   }
   .menu_tags_active {
+    /* display: block; */
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%) !important;
   }
   .menu_tags li {
