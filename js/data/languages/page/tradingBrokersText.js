@@ -350,7 +350,7 @@ export const vietnamese = [
   "Hỗ trợ nhanh:",
   "Telegram: Tp2801",
   "Hotline: 0906.326.857",
-  "Bản quyền © 2025 TP Trading. Đã đăng ký mọi quyền.",
+  "Copyright © 2025 TP Trading. All rights reserved.",
   "TP Trading:",
   "Chỉ mang tính chất cung cấp thông tin, không phải là lời khuyên đầu tư. Bạn nên tự nghiên cứu trước khi đưa ra quyết định. TP Trading không phải là cố vấn tài chính và không chịu trách nhiệm với các khoản đầu tư của bạn.",
 ];

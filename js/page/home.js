@@ -61,11 +61,29 @@ function removeDotActive() {
 let brokers = document.querySelectorAll(
   ".tradingBrokers_container_list_group_image img"
 );
-brokers.forEach((broker) => {
-  broker.addEventListener("click", () => {
-    window.location.href = "/page/tradingBrokers.html";
-  });
+brokers[0].addEventListener("click", () => {
+  window.location.href =
+    "https://vn.puprime.partners/forex-trading-account/?affid=88188";
 });
+brokers[1].addEventListener("click", () => {
+  window.location.href = "https://one.exnesstrack.org/a/zn6r5gadd6";
+});
+brokers[2].addEventListener("click", () => {
+  window.location.href =
+    "https://www.vtg-mkt-apac.com/vi/open-live-account/?affid=NzI2MzgxNw==";
+});
+brokers[3].addEventListener("click", () => {
+  window.location.href =
+    "https://affiliate.iqbroker.com/redir/?aff=751513&aff_model=revenue&afftrack=";
+});
+brokers[4].addEventListener("click", () => {
+  window.location.href = "https://affs.click/07kRR";
+});
+brokers[5].addEventListener("click", () => {
+  window.location.href =
+    "https://portal.etomarkets.net/create-live-account?t=WTXYr9S0ZUKnsuHyXuAJc";
+});
+
 
 let bannerImages = document.querySelectorAll(
   ".banners_container_image_list img"

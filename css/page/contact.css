@@ -31,7 +31,7 @@ body {
   text-align: center;
   margin: 40px 0;
 }
-body > .section-title {
+body .form-section {
   margin-top: 160px;
 }
 .section-title h1 {
@@ -56,7 +56,8 @@ body > .section-title {
   margin: 20px 0;
   margin-top: 0;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: bold;
+  color: #ff0000;
 }
 
 form {
@@ -82,7 +83,7 @@ textarea {
   font-size: 24px;
 }
 
-button {
+#send {
   background-color: black;
   color: white;
   border: none;

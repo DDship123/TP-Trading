@@ -7,6 +7,9 @@ body {
   background-color: #1f1f1f;
   position: relative;
 }
+section {
+  margin: 0 auto;
+}
 .header {
   height: 260px;
   display: flex;
@@ -138,44 +141,6 @@ body {
   background-color: white;
 }
 
-.introduction {
-  height: 775px;
-  width: 95vw;
-  margin: 50px auto;
-  border: 2px solid #707d78;
-  border-radius: 20px;
-  padding: 3% 4%;
-  position: relative;
-  font-family: "Playfair Display", serif;
-}
-.introduction .image {
-  background-image: url(/images/background/BG_4.png);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.4;
-  z-index: -1000;
-}
-.introduction_title {
-  text-align: center;
-  font-size: 74px;
-  color: #f5ff00;
-  font-weight: 600;
-  text-shadow: 60px 25px 5px rgba(0, 0, 0, 0.2);
-}
-.introduction p {
-  font-size: 32px;
-  color: white;
-  line-height: 50px;
-  margin-top: 3%;
-}
-
 .TP_biography {
   width: 95vw;
   margin: 50px auto;
@@ -225,6 +190,10 @@ body {
 .TP_biography_youtube_channel_information p {
   font-size: 20px;
 }
+.TP_biography_youtube_video {
+  display: flex;
+  flex-direction: column;
+}
 .TP_biography_youtube_video_title {
   color: white;
   font-size: 32px;
@@ -232,9 +201,8 @@ body {
   text-align: center;
 }
 .TP_biography_youtube_video video {
-  width: 80%;
-  margin: 20px 10%;
-  height: 600px;
+  margin: 20px auto;
+  height: 800px;
 }
 .TP_biography_information {
   margin-top: 60px;
@@ -269,7 +237,35 @@ body {
   font-size: 20px;
   margin-bottom: 10px;
 }
+.footer {
+  margin-top: 80px;
+}
 .footer iframe {
   border: none;
   height: 240px;
+}
+.blog_container_article_headline_title {
+  width: 94%;
+}
+
+.analyse {
+  width: 90%;
+  margin: 30px auto;
+  position: relative;
+}
+.analyse .analyse_news_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.analyse_news {
+  padding-top: 10px;
+}
+.analyse .analyse_news_title a {
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+.analyse .analyse_news_title h5 {
+  font-weight: 500;
 }

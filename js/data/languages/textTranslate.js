@@ -45,11 +45,11 @@ window.addEventListener("load", async () => {
       if (language == "VN") {
         element.innerHTML = languageContext.vietnamese[index];
         index++;
-        ``;
       } else if (language == "EN") {
         element.innerHTML = languageContext.english[index];
         index++;
       }
+      // console.log(elementText);
     }
 
     for (let child of element.children) {

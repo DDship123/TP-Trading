@@ -266,27 +266,63 @@
   }
 }
 @media screen and (max-width: 400px) {
+  .brokers_container_list::-webkit-scrollbar {
+    width: 10px;
+  }
+  .brokers_container_list_broker_reputation_licenseList::-webkit-scrollbar {
+    width: 10px;
+  }
   .title {
     font-size: 28px;
   }
   .brokers_menu h1 {
     font-size: 18px;
   }
-  .brokers_container_category_option h3 {
+  .brokers_container_list_broker_information p {
     font-size: 14px;
+  }
+  .brokers_container_category_option h3 {
+    font-size: 12px;
   }
   .brokers_container_category {
     padding: 20px 1%;
   }
+  .brokers_container_category_searchForm {
+    width: 90%;
+  }
+  .brokers_container_list_broker_reputation_licenseList_license_information
+    span:first-child {
+    font-size: 18px;
+  }
+  .brokers_container_list_broker_reputation_licenseList_license_information
+    span {
+    font-size: 18px;
+  }
+  .brokers_container_list_broker_reputation_licenseList_license img {
+    width: 60px;
+    height: 60px;
+  }
+  .brokers_container_list_broker_reputation_licenseList_license_information p {
+    font-size: 10px;
+  }
   .brokers_container_list_broker_reputation_information_score h1 {
-    font-size: 32px;
+    font-size: 26px;
   }
   .brokers_container_list_broker_reputation .scroll-bar {
     width: 100%;
   }
   .brokers_container_list_broker_reputation_information_score a {
-    font-size: 22px;
+    font-size: 16px;
     line-height: 35px;
+  }
+  .brokers_container_list_broker_reputation_information h2 {
+    font-size: 22px;
+  }
+  .brokers_container_list_broker_reputation_information ul {
+    font-size: 12px;
+  }
+  .brokers_container_list_broker_register a {
+    font-size: 24px;
   }
   .otherBrokers_title h1 {
     font-size: 32px;
@@ -295,14 +331,17 @@
     height: 500px;
   }
   .bonus_container_information_context span {
-    font-size: 12px;
+    font-size: 10px;
   }
   .bonus_container_information_time span {
     font-size: 14px;
   }
   .bonus_container_information_time i,
   .bonus_container_information_context i {
-    font-size: 40px;
+    font-size: 34px;
+  }
+  .bonus_container_information p {
+    font-size: 18px;
   }
   .bonus_container_rewardStructure_title h1 {
     font-size: 24px;
