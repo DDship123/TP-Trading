@@ -1,8 +1,0 @@
-@media screen and (max-width: 750px) {
-    .footerBar_content{
-        flex-direction: column;
-    }
-    .copyRight{
-        margin-bottom: 20px;
-    }
-}

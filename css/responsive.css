@@ -1,0 +1,339 @@
+/* Hero Responsive Design */
+@media (max-width: 1400px) {
+  .hero__avatar-image {
+    height: 105%;
+  }
+}
+@media (max-width: 1330px) {
+  .hero__avatar-image {
+    height: 600px;
+    width: 300px;
+    bottom: 100px;
+    top: auto;
+    right: 10px;
+  }
+  .hero__right {
+    position: static;
+  }
+  .hero__content {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+}
+@media (max-width: 1200px) {
+  .navigation__container {
+    padding: 0 20px;
+  }
+
+  .hero__container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+  }
+  .hero__left {
+    text-align: center;
+    align-items: center;
+  }
+  .hero__avatar {
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    height: 700px;
+  }
+  .hero__avatar-image {
+    position: absolute;
+    width: 400px;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10%;
+  }
+  .hero__avatar::after {
+    content: "MASTER TP";
+    padding: 10px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    color: #000;
+    background: linear-gradient(135deg, #ffd700, #ffa500);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+  .hero__features-text {
+    width: 100%;
+  }
+
+  .navigation__menu {
+    gap: 30px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__subtitle-text {
+    font-size: 20px;
+  }
+
+  .hero__form {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation__container {
+    margin: 0 2vw;
+  }
+  .navigation__menu {
+    display: none;
+  }
+
+  .hero__title {
+    font-size: 20px;
+  }
+
+  .hero__subtitle-text {
+    font-size: 18px;
+  }
+
+  .navigation__link {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__avatar::after {
+    width: 360px;
+  }
+  .course__lesson {
+    background: linear-gradient(
+      90deg,
+      rgba(209, 5, 3, 1) 0%,
+      rgba(132, 3, 2, 1) 81%,
+      rgba(107, 3, 2, 1) 100%
+    );
+  }
+  .hero__container {
+    padding: 0 15px;
+  }
+
+  .hero__banner {
+    padding: 20px;
+  }
+
+  .hero__title {
+    font-size: 18px;
+  }
+
+  .hero__form {
+    padding: 25px 20px;
+  }
+  .hero__strategy-text {
+    font-size: 14px;
+  }
+  .hero__form-title {
+    font-size: 20px;
+  }
+}
+/* Course Responsive Design */
+@media (max-width: 1200px) {
+  .course__content {
+    grid-template-columns: 250px 1fr;
+    gap: 40px;
+  }
+
+  .course__lessons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 968px) {
+  .course__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .course__instructor {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .course__lessons {
+    grid-template-columns: 1fr;
+  }
+
+  .course__benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .course__container {
+    padding: 0 20px;
+  }
+
+  .course__lesson {
+    padding: 25px 20px;
+  }
+
+  .course__benefit {
+    padding: 25px 20px;
+  }
+
+  .course__title {
+    font-size: 1.8rem;
+  }
+
+  .course__subtitle {
+    font-size: 1.2rem;
+  }
+}
+/* Responsive Design for Master */
+@media (max-width: 1500px) {
+  .master__title {
+    text-align: center;
+  }
+  .master__title::after {
+    margin: 0 auto;
+  }
+  .master__info {
+    width: 90%;
+  }
+  .master__avatar {
+    width: auto;
+  }
+  .master__avatar-circle {
+    width: 650px;
+    height: 650px;
+  }
+  .master__content {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 1200px) {
+  .master__title::after {
+    width: 60%;
+  }
+}
+
+@media (max-width: 968px) {
+  .master__title {
+    font-size: 2rem;
+  }
+
+  .master__info {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .master__container {
+    padding: 0 20px;
+  }
+  .master__avatar-circle {
+    width: 450px;
+    height: 450px;
+  }
+
+  .master__info {
+    padding: 30px 25px;
+  }
+
+  .master__achievement {
+    font-size: 1rem;
+  }
+
+  .master__social-link {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 500px) {
+  .master__avatar-circle {
+    width: 400px;
+    height: 400px;
+  }
+}
+/* Responsive Design for Contact */
+@media (max-width: 1200px) {
+  .contact__content {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 968px) {
+  .contact__content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact__title {
+    font-size: 2.2rem;
+  }
+
+  .contact__info-card,
+  .contact__registration {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact__container {
+    padding: 0 20px;
+  }
+
+  .contact__title {
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+  }
+
+  .contact__info-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .contact__methods {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__method {
+    padding: 20px;
+  }
+}
+/* Modal Responsive */
+@media (max-width: 768px) {
+  .modal__content {
+    padding: 30px 25px;
+    margin: 20px;
+  }
+
+  .modal__form-title {
+    font-size: 1.3rem;
+  }
+
+  .modal__input {
+    padding: 12px 15px;
+  }
+
+  .modal__submit-btn {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}

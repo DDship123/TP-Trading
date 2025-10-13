@@ -1,0 +1,1228 @@
+/**
+ * ================================================================================
+ * MASTER TP - TRADING COURSE WEBSITE STYLES
+ * Main CSS file with BEM methodology and organized structure
+ * ================================================================================
+ * Table of Contents:
+ * 1. Reset & Base Styles
+ * 2. Navigation Component
+ * 3. Hero Section
+ * 4. Course Section
+ * 5. Master Section
+ * 6. Contact Section
+ * 7. Modal Component
+ * 8. Utility Classes
+ * 9. Responsive Design
+ * ================================================================================
+ */
+
+/* ==================== 1. RESET & BASE STYLES ==================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  line-height: 1.6;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* ==================== 2. NAVIGATION COMPONENT ==================== */
+.navigation {
+  background-color: #1a202c;
+  color: #ecc94b;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2001;
+}
+
+.navigation__container {
+  margin: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: relative;
+}
+
+/* Navigation Brand */
+.navigation__brand {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__brand i {
+  font-size: 38px;
+}
+
+/* Navigation Menu */
+.navigation__menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  gap: 60px;
+  width: 40vw;
+}
+
+.navigation__link {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navigation__link:hover,
+.navigation__link--active {
+  color: #fff;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+}
+
+/* Navigation CTA Button */
+.navigation__cta {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navigation__cta-button {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.navigation__cta:hover {
+  background: linear-gradient(135deg, #ffa500, #ffd700);
+}
+
+/* ==================== 3. HERO SECTION ==================== */
+.hero {
+  background: url("../images/background_3.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 140px;
+  padding-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero__container {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.hero__content {
+  display: grid;
+  grid-template-columns: 59vw 40vw;
+  gap: 80px;
+  align-items: center;
+}
+
+.hero__left {
+  color: #fff;
+}
+
+/* Hero Banner */
+.hero__banner {
+  background: linear-gradient(
+    90deg,
+    rgba(215, 7, 7, 1) 0%,
+    rgba(127, 34, 34, 1) 50%,
+    rgba(127, 34, 34, 0.2) 100%
+  );
+  padding: 25px 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+}
+
+.hero__title {
+  font-size: 24px;
+  font-weight: 900;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Hero Subtitle */
+.hero__subtitle {
+  margin-bottom: 25px;
+}
+
+.hero__subtitle-text {
+  font-size: 34px;
+  font-weight: 800;
+  color: #fff;
+  width: 90%;
+}
+
+.hero__highlight {
+  font-weight: 800;
+  color: #dc143c;
+  text-shadow: 0 0 10px rgba(220, 20, 60, 0.8);
+}
+
+/* Hero Method Banner */
+.hero__method {
+  margin-bottom: 15px;
+}
+
+.hero__method-banner {
+  background: linear-gradient(
+    90deg,
+    rgba(215, 7, 7, 1) 0%,
+    rgba(127, 34, 34, 1) 50%,
+    rgba(127, 34, 34, 0.1) 100%
+  );
+  padding: 15px 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 600;
+  color: #fff;
+  box-shadow: -18px 5px 15px rgba(220, 20, 60, 0.3);
+}
+
+/* Hero Features */
+.hero__features {
+  margin-bottom: 20px;
+}
+
+.hero__features-text {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.hero__feature-list {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.hero__feature-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.hero__feature-bullet {
+  color: #4caf50;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -2px;
+}
+
+.hero__feature-label {
+  color: #4caf50;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.hero__feature-text {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+/* Hero Rules */
+.hero__rule {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.hero__rule-icon {
+  font-size: 20px;
+}
+
+.hero__rule-text {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Hero Strategy */
+.hero__strategy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #ecc94b;
+}
+
+.hero__strategy i {
+  font-size: 48px;
+  transform: translateX(-5px);
+  transition: all 0.5s ease;
+}
+
+.hero__strategy i.active {
+  transform: translateX(5px);
+}
+
+.hero__strategy-text {
+  font-weight: 600;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Hero Registration Form */
+.hero__form {
+  background: linear-gradient(
+    90deg,
+    rgba(209, 5, 3, 1) 0%,
+    rgba(132, 3, 2, 1) 81%,
+    rgba(107, 3, 2, 1) 100%
+  );
+  padding: 35px 30px;
+  border-radius: 15px;
+  box-shadow: 0 20px 50px rgba(220, 20, 60, 0.4);
+  width: 70%;
+}
+
+.hero__form-title {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.registration-form__input {
+  width: 100%;
+  padding: 18px 20px;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  background: #fff;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form__input::placeholder {
+  color: #888;
+  font-weight: 500;
+}
+
+.registration-form__button {
+  width: 100%;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #000;
+  border: none;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+}
+
+.registration-form__button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
+  background: linear-gradient(135deg, #ffa500, #ffd700);
+}
+
+/* Hero Right - Avatar */
+.hero__right {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* .hero__avatar {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.hero__avatar-image {
+  width: 100%;
+  height: 100%;
+} */
+.hero__avatar-image {
+  width: 100%;
+  top: -5%;
+  height: 110%;
+  position: absolute;
+  right: 20%;
+}
+
+/* ==================== 4. UTILITY CLASSES ==================== */
+.changeBackgroundImage {
+  width: 101%;
+  height: 50px;
+  position: absolute;
+  background-color: #000;
+  filter: blur(12px);
+  z-index: 2000;
+  top: 1100px;
+}
+
+/* ==================== 5. COURSE SECTION ==================== */
+.course {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/background_3-2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 80px 0;
+  color: #fff;
+  position: relative;
+}
+
+.course__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 10;
+}
+
+/* Course Header */
+.course__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.course__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #d50503;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.course__subtitle {
+  font-size: 36px;
+  color: white;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.course__highlight {
+  color: #d50503;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Course Content Layout */
+.course__content {
+  display: grid;
+  grid-template-columns: 30vw 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+/* Course Instructor */
+.course__instructor {
+  position: sticky;
+  top: 120px;
+  height: fit-content;
+  width: 100%;
+  align-self: start;
+}
+
+.course__instructor-image {
+  width: 100%;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.course__instructor-image:hover {
+  transform: scale(1.05);
+}
+
+/* Course Lessons */
+.course__lessons {
+  display: grid;
+  gap: 30px;
+}
+
+/* Course Individual Lesson */
+.course__lesson {
+  background: linear-gradient(
+    90deg,
+    rgba(215, 7, 7, 1) 0%,
+    rgba(127, 34, 34, 0.6) 50%,
+    rgba(127, 34, 34, 0) 100%
+  );
+  padding: 20px 25px 20px 40px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.course__lesson:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 60px rgba(220, 20, 60, 0.6);
+}
+
+.course__lesson-title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.course__lesson-list {
+  padding-left: 30px;
+}
+
+.course__lesson-item {
+  margin-bottom: 18px;
+  color: #fff;
+  font-size: 20px;
+}
+
+.course__lesson-icon {
+  color: #4caf50;
+  font-size: 14px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* Course Benefits */
+.course__benefits {
+  text-align: center;
+}
+
+.course__benefits-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.course__benefits-subtitle {
+  font-size: 26px;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.course__benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 0 auto;
+}
+
+.course__benefit {
+  background: rgba(76, 175, 80, 0.15);
+  border: 2px solid #4caf50;
+  border-radius: 15px;
+  padding: 30px 25px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.course__benefit:hover {
+  transform: translateY(-8px);
+  background: rgba(76, 175, 80, 0.25);
+  box-shadow: 0 15px 40px rgba(76, 175, 80, 0.3);
+}
+
+.course__benefit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    rgba(76, 175, 80, 0.1) 50%,
+    transparent 70%
+  );
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+}
+
+.course__benefit:hover::before {
+  transform: translateX(100%);
+}
+
+.course__benefit-icon {
+  color: #4caf50;
+  font-size: 2.2rem;
+  flex-shrink: 0;
+  z-index: 2;
+  position: relative;
+}
+
+.course__benefit-text {
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: left;
+  font-weight: 500;
+  z-index: 2;
+  position: relative;
+}
+
+/* Background Divider Positioning */
+body .changeBackgroundImage:nth-child(5) {
+  top: 3155px;
+}
+
+/* ==================== 6. MASTER SECTION ==================== */
+.master {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("../images/background_3-3.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 80px 0 40px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.master__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.master__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+
+.master__title::after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 12px;
+  background: linear-gradient(
+    90deg,
+    rgba(215, 7, 7, 1) 0%,
+    rgba(127, 34, 34, 1) 50%,
+    rgba(127, 34, 34, 0.2) 100%
+  );
+}
+
+.master__highlight {
+  color: #ecc94b;
+}
+
+.master__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  height: auto;
+}
+
+.master__info {
+  background: linear-gradient(
+    90deg,
+    rgba(209, 5, 3, 0.8) 0%,
+    rgba(158, 4, 2, 0.6) 50%,
+    rgba(132, 3, 2, 0.4) 75%,
+    rgba(107, 3, 2, 0.2) 100%
+  );
+  width: 60%;
+  padding: 20px 40px;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.master__role {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #000;
+  padding: 20px 30px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+}
+
+.master__achievements {
+  list-style: none;
+  margin-bottom: 40px;
+}
+.master__achievement:nth-child(1) {
+  color: #fff;
+  font-weight: 600;
+}
+
+.master__achievement {
+  margin-bottom: 25px;
+  font-size: 1.1rem;
+  color: #ffd700;
+  font-weight: 800;
+}
+.master__achievement > ul {
+  list-style: disc;
+  margin-top: 10px;
+  margin-left: 40px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.master__achievement-icon {
+  color: #4caf50;
+  font-size: 16px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.master__highlight-text {
+  color: #ffd700;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.master__social {
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+}
+
+.master__social-link {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.master__social-link--zalo {
+  background: linear-gradient(135deg, #0068ff, #0052cc);
+}
+
+.master__social-link--facebook {
+  background: linear-gradient(135deg, #4267b2, #365899);
+}
+
+.master__social-link--telegram {
+  background: linear-gradient(135deg, #0088cc, #229ed9);
+}
+
+.master__social-link:hover {
+  transform: scale(1.1) translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.master__social-link--zalo:hover {
+  box-shadow: 0 10px 25px rgba(0, 104, 255, 0.4);
+}
+
+.master__social-link--facebook:hover {
+  box-shadow: 0 10px 25px rgba(66, 103, 178, 0.4);
+}
+
+.master__social-link--telegram:hover {
+  box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+}
+
+/* Master Avatar */
+.master__avatar {
+  text-align: center;
+  position: relative;
+  height: auto;
+  width: 40%;
+}
+
+.master__avatar-circle {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 70%;
+  aspect-ratio: 1;
+  background-color: #d2050382;
+  border-radius: 50%;
+}
+
+.master__image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  z-index: 2;
+}
+
+.master__name-badge {
+  background: linear-gradient(135deg, #dc143cb8, #8b0000ba);
+  padding: 15px 40px;
+  width: 60%;
+  border-radius: 30px;
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+  display: inline-block;
+}
+
+.master__name {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Contact Section - BEM */
+.contact {
+  /* background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); */
+  background-color: #1a202c;
+  padding: 100px 0;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact__container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 10;
+}
+
+.contact__title {
+  font-size: 2.8rem;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact__highlight {
+  color: #ffd700;
+}
+
+.contact__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* Course Information Card */
+.contact__info-card {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contact__info-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact__info-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.contact__info-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 15px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border-left: 4px solid #ffd700;
+}
+
+.contact__info-label {
+  font-weight: 600;
+  color: #ffd700;
+  font-size: 0.95rem;
+}
+
+.contact__info-value {
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Registration Form */
+.contact__registration {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contact__registration-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffd700;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact__form {
+  display: grid;
+  gap: 25px;
+}
+
+.contact__input-group {
+  display: grid;
+  gap: 8px;
+}
+
+.contact__label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffd700;
+}
+
+.contact__input,
+.contact__textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  color: #fff;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+  outline: none;
+  border-color: #ffd700;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2);
+}
+
+.contact__input::placeholder,
+.contact__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact__submit-btn {
+  background: linear-gradient(135deg, #dc143c, #b22222);
+  color: #fff;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+}
+
+.contact__submit-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(220, 20, 60, 0.6);
+  background: linear-gradient(135deg, #ff1744, #dc143c);
+}
+
+/* Contact Methods */
+.contact__methods {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.contact__method {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.contact__method:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.4);
+}
+
+.contact__method-icon {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.contact__method-info {
+  display: grid;
+  gap: 5px;
+}
+
+.contact__method-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.contact__method-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Modal Popup - BEM */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal.modal--show {
+  opacity: 1;
+  z-index: 9999;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+.modal__content {
+  position: relative;
+  /* background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); */
+  background: linear-gradient(
+    90deg,
+    rgba(209, 5, 3, 1) 0%,
+    rgba(132, 3, 2, 1) 81%,
+    rgba(107, 3, 2, 1) 100%
+  );
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.5);
+  /* border: 2px solid rgba(255, 215, 0, 0.2); */
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.modal.modal--show .modal__content {
+  transform: scale(1);
+}
+
+.modal__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /* background: linear-gradient(135deg, #dc143c, #b22222); */
+  background: transparent;
+  color: #fff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.modal__close:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(220, 20, 60, 0.4);
+}
+
+.modal__form {
+  text-align: center;
+}
+
+.modal__form-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.modal__registration-form {
+  display: grid;
+  gap: 20px;
+}
+
+.modal__input {
+  /* background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.2); */
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px 20px;
+  /* color: #fff; */
+  border: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-family: "Inter", sans-serif;
+}
+
+.modal__input:focus {
+  outline: 1px solid grey;
+  /* border: 1px solid #ffd700;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.2); */
+}
+
+.modal__input::placeholder {
+  color: grey;
+}
+
+.modal__submit-btn {
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: #000;
+  border: none;
+  padding: 18px 40px;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 10px 30px rgba(220, 20, 60, 0.4);
+}
