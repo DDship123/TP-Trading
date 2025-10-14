@@ -212,4 +212,7 @@ function initializeModal() {
       modal.style.display = "none";
     }, 300);
   }
+  setTimeout(() => {
+    modal.classList.add("modal--show");
+  }, 10 * 1000);
 }
