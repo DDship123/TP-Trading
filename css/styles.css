@@ -782,7 +782,27 @@ body .changeBackgroundImage:nth-child(5) {
   font-weight: 600;
   border: 2px solid rgba(255, 255, 255, 0.2);
 }
-
+.master__community {
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 40px;
+}
+.master__community-text {
+  text-align: center;
+  font-size: 48px;
+  color: #ffd700;
+  font-weight: 700;
+}
+.master__community__images {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 20px;
+}
+.master__community__images img {
+  width: 100%;
+  border-radius: 20px;
+}
 .master__social-link--zalo {
   background: linear-gradient(135deg, #0068ff, #0052cc);
 }

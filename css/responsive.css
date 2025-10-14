@@ -219,6 +219,12 @@
     height: 50px;
     font-size: 1.2rem;
   }
+  .master__community-text {
+    font-size: 32px;
+  }
+  .master__community__images {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 500px) {
   .master__avatar-circle {
