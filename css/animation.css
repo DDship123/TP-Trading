@@ -43,7 +43,8 @@
 
 .registration-form__button,
 .navigation__cta,
-.modal__submit-btn {
+.modal__submit-btn,
+.contact__submit-btn {
   animation: biggerSmaller 1.2s infinite;
 }
 
