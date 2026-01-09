@@ -199,7 +199,7 @@
     );
   }
   .master__container {
-    padding: 0 20px;
+    padding: 0;
   }
   .master__avatar-circle {
     width: 450px;
@@ -296,5 +296,124 @@
   .modal__submit-btn {
     padding: 15px 30px;
     font-size: 1.1rem;
+  }
+  @media (max-width: 400px) {
+    .hero{
+      padding-top: 100px;
+    }
+    .navigation__brand i{
+      font-size: 32px;
+    }
+    .hero__title {
+      font-size: 17px;
+    }
+    .hero__subtitle-text,
+    .hero__method-banner,
+    .hero__features-text {
+      font-size: 14px;
+    }
+    .hero__strategy-text {
+      font-size: 13px;
+    }
+    .course__instructor {
+      width: 100%;
+    }
+    .course__header {
+      margin-bottom: 30px;
+    }
+    .course {
+      padding: 40px 0;
+    }
+    .course__lesson-title {
+      font-size: 16px;
+    }
+    .course__lesson-item {
+      font-size: 18px;
+    }
+    .course__benefits-title {
+      font-size: 24px;
+    }
+    .course__benefits-subtitle {
+      font-size: 16px;
+    }
+    .course__benefit-text {
+      font-size: 0.8rem;
+    }
+    .course__benefit-icon {
+      font-size: 2rem;
+    }
+    .master {
+      padding: 10px;
+    }
+    .master__title {
+      font-size: 1.4rem;
+    }
+    .master__name-badge {
+      width: 80%;
+    }
+    .master__name {
+      font-size: 1rem;
+    }
+    .master__title::after{
+      width: 90%;
+    }
+    .master__avatar-circle {
+      width: 300px;
+      height: 300px;
+    }
+    .master__role{
+      font-size: 1rem;
+    }
+    .master__achievement{
+      font-size: 0.8rem;
+    }
+    .master__achievement p{
+      font-size: 14px;
+    }
+    .master__achievement > ul{
+      font-size: 0.8rem;
+      list-style: none;
+      margin-left: 10px;
+    }
+    .master__community-text{
+      font-size: 20px;
+    }
+    .course__title {
+      font-size: 1.5rem;
+    }
+    .hero__form-title {
+      font-size: 20px;
+    }
+    .registration-form__button {
+      font-size: 18px;
+    }
+    .navigation__cta-button {
+      font-size: 14px;
+    }
+    .master__social{
+      justify-content: center;
+    }
+    .master__social-link{
+      width: 40px;
+      height: 40px;
+    }
+    .master__social-link span{
+      font-size: 14px;
+    }
+    .contact__title{
+      font-size: 1.6rem;
+    }
+    .contact__info-title{
+      font-size: 1.4rem;
+    }
+    .contact__info-value{
+      font-size: 12px;
+    }
+    .contact__registration-title{
+      font-size: 1.4rem;
+    }
+    .contact__submit-btn{
+      font-size: 0.8rem;
+    }
   }
 }

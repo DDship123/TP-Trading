@@ -88,7 +88,8 @@ body {
 
 /* Navigation CTA Button */
 .navigation__cta {
-  background: linear-gradient(135deg, #ffd700, #ffa500);
+  /* background: linear-gradient(135deg, #ffd700, #ffa500); */
+  background-color: #ffd700;
   padding: 12px 24px;
   border-radius: 8px;
   text-align: center;
@@ -97,9 +98,12 @@ body {
 }
 
 .navigation__cta-button {
-  color: #000;
+  color: red;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 800;
+  /* #DC143C */
+  /* #cc0000 */
+  /* -webkit-text-stroke: 0.1px white; */
   font-size: 16px;
   transition: all 0.3s ease;
   text-transform: uppercase;
@@ -107,7 +111,8 @@ body {
 }
 
 .navigation__cta:hover {
-  background: linear-gradient(135deg, #ffa500, #ffd700);
+  /* background: linear-gradient(135deg, #ffa500, #ffd700); */
+  background-color: #ffa500;
 }
 
 /* ==================== 3. HERO SECTION ==================== */
@@ -132,7 +137,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -358,8 +363,9 @@ body {
 
 .registration-form__button {
   width: 100%;
-  background: linear-gradient(135deg, #ffd700, #ffa500);
-  color: #000;
+  /* background: linear-gradient(135deg, #ffd700, #ffa500); */
+  background-color: #ffd700;
+  color: red;
   border: none;
   padding: 20px;
   border-radius: 10px;
@@ -375,7 +381,7 @@ body {
 .registration-form__button:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 35px rgba(255, 215, 0, 0.6);
-  background: linear-gradient(135deg, #ffa500, #ffd700);
+  /* background: linear-gradient(135deg, #ffa500, #ffd700); */
 }
 
 /* Hero Right - Avatar */
@@ -392,15 +398,16 @@ body {
   height: 100%;
 }
 .hero__avatar::after {
-  content: "MASTER TP";
+  content: "Master TP";
   padding: 10px 20px;
   font-size: 32px;
   font-weight: 800;
   border-radius: 20px;
   width: 100%;
   text-align: center;
-  color: #000;
-  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: red;
+  background-color: #ffd700;
+  /* background: linear-gradient(135deg, #ffd700, #ffa500); */
   position: absolute;
   left: 45%;
   transform: translateX(-50%);
@@ -640,7 +647,7 @@ body .changeBackgroundImage:nth-child(5) {
 
 /* ==================== 6. MASTER SECTION ==================== */
 .master {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)),
     url("../images/background_3-3.jpeg");
   background-size: cover;
   background-position: center;
@@ -873,7 +880,7 @@ body .changeBackgroundImage:nth-child(5) {
   color: #fff;
   font-size: 1.5rem;
   font-weight: 900;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
 }
 
@@ -1176,8 +1183,8 @@ body .changeBackgroundImage:nth-child(5) {
 
 .modal__close {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 5px;
+  right: 10px;
   /* background: linear-gradient(135deg, #dc143c, #b22222); */
   background: transparent;
   color: #fff;
@@ -1243,8 +1250,10 @@ body .changeBackgroundImage:nth-child(5) {
 }
 
 .modal__submit-btn {
-  background: linear-gradient(135deg, #ffd700, #ffa500);
-  color: #000;
+  /* background: linear-gradient(135deg, #ffd700, #ffa500); */
+  background-color: #ffd700;
+  color: red;
+  /* color: #000; */
   border: none;
   padding: 18px 40px;
   border-radius: 15px;
